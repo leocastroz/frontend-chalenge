@@ -21,8 +21,8 @@ O objetivo do desafio é construir de personagens do [Star Wars](https://swapi.d
 
 # Algumas regras
 - A página não pode ser estática. Ela deve possuir alguma inteligência para exibir o catálogo de personagens dinamicamente.
-- Caso você opte por utilizar alguma ferramenta de build (Grunt, Gulp, npm, etc), não se esqueça de criar um arquivo com instruções para rodarmos o projeto.
 - Se você estiver com dúvidas, busque por referências no Google, ou pergunte para amigos. Mas não peça para eles resolverem o desafio para você.
+
 # Requisitos
 - A página deve ser responsiva.
 
