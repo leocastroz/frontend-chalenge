@@ -37,3 +37,5 @@ O objetivo do desafio é construir de personagens do [Star Wars](https://swapi.d
 - O código será avaliado considerando: semântica, estruturação, legibilidade, tamanho, entre outros fatores.
 - Nossa stack aqui na Big Bang é baseada em VueJs + Quasar e graphql. Caso você tenha familiaridade com ela, pode utilizá-la para resolver o desafio.
 - Estamos buscando um desenvolvedor front-end que saiba montar um layout bonito e que também saiba programar em JavaScript, por isso aproveite a oportunidade para nos mostrar que você tem conhecimento nas duas áreas.
+
+Boa sorte!
