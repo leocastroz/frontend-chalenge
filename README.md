@@ -11,12 +11,12 @@ O objetivo do desafio é construir de personagens do Star Wars https://swapi.dev
 
 - Mostrar uma página de catálogo com a lista de personagens Star Wars (ver documentação https://swapi.dev/documentation).
 
-name
-birth_year
-eye_color
-gender
-hair_color
-height
+- name
+- birth_year
+- eye_color
+- gender
+- hair_color
+- height
 
 # Critérios de avaliação
 - O código será avaliado considerando: semântica, estruturação, legibilidade, tamanho, entre outros fatores.
