@@ -1,6 +1,6 @@
 # Front-end challenge
 
-O objetivo do desafio é construir de personagens do Star Wars https://swapi.dev.
+O objetivo do desafio é construir de personagens do [Star Wars](https://swapi.dev).
 
 # Algumas regras
 - A página não pode ser estática. Ela deve possuir alguma inteligência para exibir o catálogo de personagens dinamicamente.
@@ -9,7 +9,7 @@ O objetivo do desafio é construir de personagens do Star Wars https://swapi.dev
 # Requisitos
 - A página deve ser responsiva.
 
-- Mostrar uma página de catálogo com a lista de personagens Star Wars (ver documentação https://swapi.dev/documentation).
+- Mostrar uma página de catálogo com a lista de personagens Star Wars ([ver documentação](https://swapi.dev/documentation)).
 
 - name
 - birth_year
