@@ -20,12 +20,12 @@ O que nós esperamos aprender de você com o desafio:
 O objetivo do desafio é construir uma lista de personagens do [Star Wars](https://swapi.dev).
 
 # Algumas regras
+
 - Se você estiver com dúvidas, busque por referências no Google, ou pergunte para amigos. Mas não peça para eles resolverem o desafio para você.
 
 # Requisitos
-- A página deve ser responsiva.
 
-- Mostrar uma página com a lista de personagens Star Wars ([ver documentação](https://swapi.dev/documentation)).
+- Mostrar uma página com a lista de personagens Star Wars([ver documentação](https://swapi.dev/documentation)).
 
   - name
   - birth_year
