@@ -43,7 +43,7 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
+    <q-page-container class="bg-image">
       <router-view />
     </q-page-container>
   </q-layout>
@@ -61,46 +61,46 @@ const name = 'Leonardo Castro'
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
+    title: 'Home',
+    caption: 'start page',
     icon: 'school',
-    link: 'https://quasar.dev'
+    link: '/'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'Peoples',
+    caption: 'Star wars - peoples',
+    icon: 'group',
+    link: '/peoples'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
+    title: 'Planets',
+    caption: 'Star wars - planets',
     icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    link: '/planets'
   },
   {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    title: 'Films',
+    caption: 'Star wars - films',
+    icon: 'videocam',
+    link: '/films'
+  },
+  {
+    title: 'Species',
+    caption: 'Star wars - species',
+    icon: 'adb',
+    link: '/species'
+  },
+  {
+    title: 'Vehicles',
+    caption: 'Star wars - vehicles',
+    icon: 'airport_shuttle',
+    link: '/vehicles'
+  },
+  {
+    title: 'Starships',
+    caption: 'Star wars - starships',
+    icon: 'star',
+    link: '/starships'
   }
 ]
 

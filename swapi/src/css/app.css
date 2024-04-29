@@ -11,4 +11,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   filter: sepia(1);
+  width: 100vw;
+  height: 100vh;
+}
+
+.active-link-class {
+  background-color: #f5f5f517 !important;
 }
