@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="tw-bg-stone-900">
         <q-btn
           flat
           dense
@@ -11,11 +11,14 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title>
-          Quasar App
+        <q-toolbar-title class="tw-text-orange-400 ">
+          swapi
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>developer by <span class="tw-text-orange-400 tw-px-1"> {{ name }}</span></div>
+        <q-avatar>
+          <img src="https://avatars.githubusercontent.com/u/72839343?v=4">
+        </q-avatar>
       </q-toolbar>
     </q-header>
 
@@ -27,8 +30,9 @@
       <q-list>
         <q-item-label
           header
+          class="tw-flex tw-items-center tw-justify-center"
         >
-          Essential Links
+          <img src="../assets/images/logotype.png" alt="" width="150">
         </q-item-label>
 
         <EssentialLink
@@ -52,6 +56,8 @@ import EssentialLink from 'components/EssentialLink.vue'
 defineOptions({
   name: 'MainLayout'
 })
+
+const name = 'Leonardo Castro'
 
 const linksList = [
   {
