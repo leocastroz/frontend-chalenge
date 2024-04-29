@@ -8,6 +8,9 @@
       </div>
       <RouterLink to="/peoples" class="tw-py-2 tw-my-3 tw-rounded-full tw-bg-orange-800 tw-text-[18px]">see now</RouterLink>
     </div>
+    <div class="tw-fixed tw-right-0 tw-bottom-0">
+      <img src="../assets/images/babyyoda.png" alt="" width="500">
+    </div>
   </q-page>
 </template>
 
