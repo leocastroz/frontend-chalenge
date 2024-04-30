@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia';
 import axios from 'axios';
 
+const BASE_URL = import.meta.env.VITE_URL;
+
 export const usePeopleStore = defineStore({
   id: 'people',
   state: () => ({
@@ -9,7 +11,7 @@ export const usePeopleStore = defineStore({
     previousPage: null,
   }),
   actions: {
-    fetchPeople(url = 'https://swapi.py4e.com/api/people/') {
+    fetchPeople(url = `${BASE_URL}/people`) {
       axios
         .get(url)
         .then((response) => {
