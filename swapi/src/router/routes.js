@@ -3,13 +3,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
-      { path: '/peoples', component: () => import('pages/GetPeoples.vue') },
-      { path: '/planets', component: () => import('pages/GetPlanets.vue') },
-      { path: '/films', component: () => import('pages/GetFilms.vue') },
-      { path: '/species', component: () => import('pages/GetSpecies.vue') },
-      { path: '/vehicles', component: () => import('pages/GetVehicles.vue') },
-      { path: '/starships', component: () => import('pages/GetStarships.vue') },
+      { name: 'Home', path: '', component: () => import('pages/IndexPage.vue') },
+      { name: 'Peoples', path: '/peoples', component: () => import('pages/GetPeoples.vue') },
+      { name: 'Planets', path: '/planets', component: () => import('pages/GetPlanets.vue') },
+      { name: 'Films', path: '/films', component: () => import('pages/GetFilms.vue') },
+      { name: 'Species', path: '/species', component: () => import('pages/GetSpecies.vue') },
+      { name: 'Vehicles', path: '/vehicles', component: () => import('pages/GetVehicles.vue') },
+      { name: 'Starships', path: '/starships', component: () => import('pages/GetStarships.vue') },
     ]
   },
 

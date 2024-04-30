@@ -24,3 +24,7 @@ body {
   font-family: "Mrs Sheppards", cursive;
   font-style: normal;
 }
+
+.bg-card {
+  background-image: url('../assets/images/star.gif');
+}
