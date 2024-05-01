@@ -4,7 +4,12 @@
       <div class="tw-bg-[#aa9c2478]">
         <img src="../assets/images/logotype.png" alt="" width="70" class="tw-mx-auto tw-pt-3">
         <q-card-section class="tw-w-96 tw-grid tw-gap-2 tw-text-white tw-font-light">
-          <img src="../assets/images/people-icon.png" alt="people-random" width="200" class="tw-fixed tw-26 tw-mt-[-120px] tw-ml-[200px]">
+
+          <transition appear enter-active-class="animated fadeInDown slower delay-1s">
+            <img src="../assets/images/people-icon.png" alt="people-random" width="200" class="tw-fixed tw-26 tw-mt-[-120px] tw-ml-[200px]">
+          </transition>
+
+
           <div class="tw-flex tw-items-center tw-text-orange-300 tw-tracking-wide tw-bg-[#0000002e] tw-px-4 tw-rounded tw-w-auto tw-font-light">
             <q-icon name="person" size="2em" />
             <h2 class="tw-px-1 tw-mt-1">{{ person.name }}</h2>
