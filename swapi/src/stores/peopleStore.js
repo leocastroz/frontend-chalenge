@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia';
-import axios from 'axios';
+import { api } from '../boot/axios.js';
 
 const BASE_URL = import.meta.env.VITE_URL;
 
@@ -12,8 +12,7 @@ export const usePeopleStore = defineStore({
   }),
   actions: {
     fetchPeople(url = `${BASE_URL}/people`) {
-      axios
-        .get(url)
+      api.get(url)
         .then((response) => {
           this.people = response.data.results;
           this.nextPage = response.data.next;

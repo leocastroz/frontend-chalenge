@@ -3,33 +3,33 @@ import { api } from '../boot/axios.js';
 
 const BASE_URL = import.meta.env.VITE_URL;
 
-export const usePlanetsStore = defineStore({
-  id: 'planets',
+export const useSpeciesStore = defineStore({
+  id: 'species',
   state: () => ({
-    planets: [],
+    species: [],
     nextPage: null,
     previousPage: null,
   }),
   actions: {
-    fetchPlanets(url = `${BASE_URL}/planets`) {
+    fetchSpecies(url = `${BASE_URL}/species`) {
       api.get(url)
         .then((response) => {
-          this.planets = response.data.results;
+          this.species = response.data.results;
           this.nextPage = response.data.next;
           this.previousPage = response.data.previous;
         })
         .catch((error) => {
-          console.error('Error fetching planets:', error);
+          console.error('Error fetching species:', error);
         });
     },
     fetchNextPage() {
       if (this.nextPage) {
-        this.fetchPlanets(this.nextPage);
+        this.fetchSpecies(this.nextPage);
       }
     },
     fetchPreviousPage() {
       if (this.previousPage) {
-        this.fetchPlanets(this.previousPage);
+        this.fetchSpecies(this.previousPage);
       }
     },
   },
