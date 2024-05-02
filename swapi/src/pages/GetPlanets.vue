@@ -38,16 +38,10 @@ import { columnsMock } from '../mocks/planetsMock.js';
 const router = useRouter();
 const planetsStore = usePlanetsStore();
 const title = computed(() => `Star Wars - ${router.currentRoute.value.name}`);
-console.log('rota atual do usuário ->', router.currentRoute.value)
-
 const dialogVisible = ref(false);
 const selectedPerson = ref(null);
 
-const closeDialog = () => {
-  dialogVisible.value = false;
-};
-
-const selectPlanet = (evt, row) => {
+function selectPlanet(evt, row) {
   selectedPerson.value = row;
   dialogVisible.value = true;
 };

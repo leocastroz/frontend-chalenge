@@ -29,37 +29,35 @@
   </q-dialog>
 </template>
 
-<script>
-export default {
-  props: {
-    person: {
-      type: Object,
-      required: true
-    },
-    dialogVisible: {
-      type: Boolean,
-      required: true
-    }
+<script setup>
+import { ref, watch } from 'vue';
+
+const props = defineProps({
+  person: {
+    type: Object,
+    required: true
   },
-  data() {
-    return {
-      localDialogVisible: this.dialogVisible
-    }
-  },
-  watch: {
-    dialogVisible(newVal) {
-      this.localDialogVisible = newVal;
-    },
-    localDialogVisible(newVal) {
-      if (newVal !== this.dialogVisible) {
-        this.$emit('update:dialogVisible', newVal);
-      }
-    }
-  },
-  methods: {
-    closeDialog() {
-      this.$emit('close');
-    }
+  dialogVisible: {
+    type: Boolean,
+    required: true
   }
+});
+
+const emit = defineEmits(['update:dialogVisible', 'close']);
+
+let localDialogVisible = ref(props.dialogVisible);
+
+watch(() => props.dialogVisible, newVal => {
+  localDialogVisible.value = newVal;
+});
+
+watch(localDialogVisible, newVal => {
+  if (newVal !== props.dialogVisible) {
+    emit('update:dialogVisible', newVal);
+  }
+});
+
+function closeDialog() {
+  emit('close');
 };
 </script>

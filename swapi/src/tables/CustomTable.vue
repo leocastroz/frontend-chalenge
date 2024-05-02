@@ -1,8 +1,9 @@
 <template>
   <q-table
-    style="height: 650px;font-size: 12px;"
+    style="height: 600px;font-size: 12px;"
     flat
     bordered
+    hide-bottom
     :title="title"
     :rows="rows"
     :columns="columns"
@@ -13,26 +14,25 @@
   />
 </template>
 
-<script>
-export default {
-  props: {
-    columns: {
-      type: Array,
-      required: true
-    },
-    rows: {
-      type: Array,
-      required: true
-    },
-    pagination: {
-      type: Object,
-      required: true
-    }
+<script setup>
+const props = defineProps({
+  columns: {
+    type: Array,
+    required: true
   },
-  methods: {
-    onRowClick(evt, row) {
-      this.$emit('row-click', evt, row);
-    }
+  rows: {
+    type: Array,
+    required: true
+  },
+  pagination: {
+    type: Object,
+    required: true
   }
+});
+
+const emit = defineEmits(['row-click']);
+
+const onRowClick = (evt, row) => {
+  emit('row-click', evt, row);
 };
 </script>
