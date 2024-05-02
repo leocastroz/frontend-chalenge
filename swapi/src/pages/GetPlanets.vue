@@ -52,5 +52,5 @@ const selectPlanet = (evt, row) => {
   dialogVisible.value = true;
 };
 
-planetsStore.fetchPeople();
+planetsStore.fetchPlanets();
 </script>

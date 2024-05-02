@@ -3,11 +3,9 @@
     <q-header elevated>
       <q-toolbar class="tw-bg-stone-900">
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
-
-        <q-toolbar-title class="tw-text-orange-100 ">
-          <p class="star-wars">Star Wars - api</p>
+        <q-toolbar-title class="tw-text-orange-400 ">
+          <p class="star-wars">Star Wars</p>
         </q-toolbar-title>
-
         <div>developer by <span class="tw-text-orange-400 tw-px-1"> {{ name }}</span></div>
         <q-avatar>
           <img src="https://avatars.githubusercontent.com/u/72839343?v=4">

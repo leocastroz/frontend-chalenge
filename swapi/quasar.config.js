@@ -100,9 +100,9 @@ module.exports = configure(function (/* ctx */) {
       plugins: ['Dialog']
     },
 
-      animations: 'all', // --- includes all animations
+    //  animations: 'all', // --- includes all animations
     // https://v2.quasar.dev/options/animations
-    // animations: [],
+    animations: ['fadeInDown'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#property-sourcefiles
     // sourceFiles: {

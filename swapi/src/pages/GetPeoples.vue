@@ -32,7 +32,7 @@ import CustomTable from '../tables/CustomTable.vue';
 import PersonDetails from '../modals/PersonDetails.vue';
 import { useRouter } from 'vue-router';
 import { ref, computed } from "vue";
-import { usePeopleStore } from "../stores/PeopleStore.js";
+import { usePeopleStore } from "../stores/peopleStore.js";
 import { columnsMock } from '../mocks/columnsMock.js';
 
 const router = useRouter();

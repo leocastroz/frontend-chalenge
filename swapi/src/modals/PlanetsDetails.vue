@@ -11,11 +11,11 @@
             <q-icon name="public" size="2em" />
             <h2 class="tw-px-1 tw-mt-1">{{ planet.name }}</h2>
           </div>
-          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Birth Year:  <span class="tw-text-black">{{ planet.birth_year }}</span></p>
-          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Eye Color: <span class="tw-text-black">{{ planet.eye_color }}</span></p>
-          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Gender: <span class="tw-text-black">{{ planet.gender }}</span></p>
-          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Height: <span class="tw-text-black">{{ planet.height }}</span></p>
-          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Hair: <span class="tw-text-black">{{planet.hair_color}}</span></p>
+          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Rotation Period:  <span class="tw-text-black">{{ planet.rotation_period }}</span></p>
+          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Orbital Period: <span class="tw-text-black">{{ planet.orbital_period }}</span></p>
+          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Diameter: <span class="tw-text-black">{{ planet.diameter }}</span></p>
+          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Climate: <span class="tw-text-black">{{ planet.climate }}</span></p>
+          <p class="tw-bg-[#0000002e] tw-py-2 tw-rounded tw-px-5">Gravity: <span class="tw-text-black">{{planet.gravity}}</span></p>
         </q-card-section>
         <q-card-actions class="tw-cursor-pointer tw-text-black tw-font-black tw-flex tw-justify-between tw-px-5">
           <p class="tw-font-thin tw-text-xs">developer by Leonardo Castro</p>
