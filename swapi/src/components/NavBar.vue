@@ -4,7 +4,6 @@
       <q-item-section v-if="props.icon" avatar>
         <q-icon :name="props.icon" class="tw-text-orange-300" />
       </q-item-section>
-
       <q-item-section>
         <q-item-label class="tw-text-orange-400">{{ props.title }}</q-item-label>
         <q-item-label caption>{{ props.caption }}</q-item-label>
@@ -14,7 +13,7 @@
 </template>
 
 <script setup>
-import { computed, defineProps } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 const props = defineProps({
