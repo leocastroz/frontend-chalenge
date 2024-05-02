@@ -1,4 +1,4 @@
-export const columnsMock = [
+export const peoplesMock = [
   {
     name: "name",
     required: true,

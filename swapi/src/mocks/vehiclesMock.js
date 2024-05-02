@@ -1,0 +1,45 @@
+export const vehicleMock = [
+  {
+    name: "name",
+    required: true,
+    label: "Name",
+    align: "left",
+    field: "name",
+    sortable: true,
+  },
+  {
+    name: "model",
+    label: "Model",
+    align: "center",
+    field: "model",
+    sortable: true,
+  },
+  {
+    name: "manufacturer",
+    label: "Manufacturer",
+    align: "center",
+    field: "manufacturer",
+    sortable: true,
+  },
+  {
+    name: "length",
+    label: "Length",
+    align: "center",
+    field: "length",
+    sortable: true,
+  },
+  {
+    name: "passengers",
+    label: "Passengers",
+    align: "center",
+    field: "passengers",
+    sortable: true,
+  },
+  {
+    name: "cargo_capacity",
+    label: "Cargo Capacity",
+    align: "center",
+    field: "cargo_capacity",
+    sortable: true,
+  },
+];

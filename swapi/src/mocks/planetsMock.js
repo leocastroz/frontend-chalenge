@@ -42,4 +42,4 @@ export const columnsMock = [
     field: "gravity",
     sortable: true,
   }
-];  
+];
